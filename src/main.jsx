@@ -1,35 +1,21 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import './index.css'
-// import App from './App.jsx'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
+import React from "react"; // Import de la librairie React
+import ReactDOM from "react-dom/client"; // Permet d’afficher  app dans le DOM (le HTML)
+import App from "./App.jsx"; // Composant principal de l'application 
 
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )
-
-
-// Fichier qui démarre l'application React
-
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-
-// On ajoute Bootstrap (style + JS du menu)
+// j' ajoute Bootstrap (style + JS du menu)
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-// Notre fichier de styles perso
+// mon fichier de styles perso
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  // <React.StrictMode> est un outil de vérification de React
+  // Il aide à repérer les erreurs ou mauvaises pratiques pendant le développement.
   <React.StrictMode>
+    {/* j'affiche le composant principal App */}
     <App />
   </React.StrictMode>
 );
